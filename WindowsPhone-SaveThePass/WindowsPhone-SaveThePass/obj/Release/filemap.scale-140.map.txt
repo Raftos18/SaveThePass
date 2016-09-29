@@ -1,0 +1,10 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.scale-140"
+"ResourceDimensions"		"scale-140"
+
+[Files]
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\filemap.scale-140.pri"			"resources.pri"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\Assets\StoreLogo.scale-140.png"			"Assets\StoreLogo.scale-140.png"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\Assets\Square71x71Logo.scale-140.png"			"Assets\Square71x71Logo.scale-140.png"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\Assets\SmallLogo.scale-140.png"			"Assets\SmallLogo.scale-140.png"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\Assets\Logo.scale-140.png"			"Assets\Logo.scale-140.png"

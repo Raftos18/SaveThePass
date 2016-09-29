@@ -1,0 +1,85 @@
+﻿<Page
+    x:Class="WindowsPhone_SaveThePass.View.HelpPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsPhone_SaveThePass.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="SaveThePass" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="Help" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontSize="40" FontFamily="Elephant" Foreground="{StaticResource PhoneAccentBrush}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+
+            <ScrollViewer BorderThickness="2" BorderBrush="{StaticResource ScrollBarButtonForegroundThemeBrush}" VerticalScrollBarVisibility="Visible" VerticalScrollMode="Enabled">
+                <StackPanel Margin="10,0,0,0">
+
+                    <!-- Log in explanation!-->
+                    <TextBlock Text="Log in" Style="{StaticResource GroupHeaderTextBlockStyle}" Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold"/>
+                    <TextBlock Text="   Loging in for the first time the application will require you to insert a password that you will use in the feature." 
+                               TextWrapping="Wrap" Style="{StaticResource  BodyTextBlockStyle}" FontSize="15" Margin="10,10,0,10" FontStyle="Italic" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <!-- Change password explanation!-->
+                    <TextBlock Text="Change Password" Style="{StaticResource GroupHeaderTextBlockStyle}" Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold"/>
+                    <TextBlock Text="   In case you want to change your password you must tap on the change password button from the log in page. Then you just supply your old password and the new you want to use and confirm the change."
+                               TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" FontSize="15" Margin="10,10,0,10" FontStyle="Italic" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                    <!-- Central page explanation!-->
+                    <TextBlock Text="Accounts List" Style="{StaticResource GroupHeaderTextBlockStyle}" Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold"/>
+                    <TextBlock Text="   Accounts list is the main page of the application. All of your saved accounts are collected here. From here you can Preview, Add, Edit, Delete and Search for accounts."
+                               TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" FontSize="15" Margin="10,10,0,10" FontStyle="Italic" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    
+                    <!-- Preview explanation!-->
+                    <TextBlock Text="Preview" Style="{StaticResource GroupHeaderTextBlockStyle}" Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold"/>
+                    <TextBlock Text="   Preview is where you can see the information contained in each account you have saved. You can preview your account information by either DOUBLE tapping on the selected account, which will show all the information available or from the accounts list you can have quick access to the email and password associated with each account."
+                               TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" FontSize="15" Margin="10,10,0,10" FontStyle="Italic"/>
+
+                    <!-- Add explanation!-->
+                    <TextBlock Text="Add" Style="{StaticResource GroupHeaderTextBlockStyle}" Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold"/>
+                    <TextBlock Text="   Pressing the add button will redirect to the add page in which the user can fill out the form which the information he wants abouts the new account. Apart the common fields like account name, password the user can specify if the account's password will expire and also he can add some additional notes like a pin for a card."
+                               TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" FontSize="15" Margin="10,10,0,10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <!-- Edit explanation!-->
+                    <TextBlock Text="Edit" Style="{StaticResource GroupHeaderTextBlockStyle}" Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold"/>
+                    <TextBlock Text="   By selecting an account and pressing edit you can enter the edit mode from which you can change the information of the present account. All information exept the account name can be changed."
+                               TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" FontSize="15" Margin="10,10,0,10"/>
+
+                    <!-- Delete explanation!-->
+                    <TextBlock Text="Delete" Style="{StaticResource GroupHeaderTextBlockStyle}" Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold"/>
+                    <TextBlock Text="   Select the account you want to delete and press the delete button, a pop up window will appear that will ask to verify your action."
+                               TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" FontSize="15" Margin="10,10,0,10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <!-- Search explanation!-->
+                    <TextBlock Text="Search" Style="{StaticResource GroupHeaderTextBlockStyle}" Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold"/>
+                    <TextBlock Text="   After pressing the search button a search text box will appear in which you can supply the name of the account you want. The system will make suggestion based on your input in order to help you find that you are looking for. After you have entered the desired name just press the enter button on your virtual keyboard."
+                               TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" FontSize="15" Margin="10,10,0,10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <!--Privacy Policy-->
+                    <TextBlock Text="Privacy Policy" Style="{StaticResource GroupHeaderTextBlockStyle}" Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold"/>
+                    <TextBlock Text="   SaveThePass is an account information manager application. Only the information given by the user are stored by the application. All users informations are encrypted and stored locally on the users phone. The only way for the user to access the information is by login in the application."
+                               TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" FontSize="15" Margin="10,10,0,10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+                
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

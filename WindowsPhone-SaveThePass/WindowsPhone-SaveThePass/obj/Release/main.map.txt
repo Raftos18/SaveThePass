@@ -1,0 +1,23 @@
+[ResourceMetadata]
+"ResourceDimensions"		"scale-240"
+"ResourceDimensions"		"language-en-us"
+"ResourceDimensions"		"language-en-US"
+
+[Files]
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\split.pri"			"resources.pri"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\WindowsPhone-SaveThePass.xr.xml"			"WindowsPhone-SaveThePass.xr.xml"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\WindowsPhone-SaveThePass.exe"			"WindowsPhone-SaveThePass.exe"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\App.xbf"			"App.xbf"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\View\PreviewPage.xbf"			"View\PreviewPage.xbf"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\View\LoginPage.xbf"			"View\LoginPage.xbf"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\View\HelpPage.xbf"			"View\HelpPage.xbf"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\View\ChangePasswordPage.xbf"			"View\ChangePasswordPage.xbf"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\View\CentralPage.xbf"			"View\CentralPage.xbf"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\View\AddPage.xbf"			"View\AddPage.xbf"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\Assets\WideLogo.scale-240.png"			"Assets\WideLogo.scale-240.png"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\Assets\StoreLogo.scale-240.png"			"Assets\StoreLogo.scale-240.png"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\Assets\Square71x71Logo.scale-240.png"			"Assets\Square71x71Logo.scale-240.png"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\Assets\SplashScreen.scale-240.png"			"Assets\SplashScreen.scale-240.png"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\Assets\SmallLogo.scale-240.png"			"Assets\SmallLogo.scale-240.png"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\Assets\Logo.scale-240.png"			"Assets\Logo.scale-240.png"
+"C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\obj\Release\PackageLayout\Assets\Help-icon.png"			"Assets\Help-icon.png"

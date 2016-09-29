@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="WindowsPhone_SaveThePass.CentralPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsPhone_SaveThePass.Model_View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <local:AccManager x:Name="accountManager"/>
+    </Page.Resources>
+
+    <Page.BottomAppBar>
+        <CommandBar x:Name="appBar" Height="auto">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:Name="addAppBarButton" Icon="Add" Label="Add" Click="addAppBarButton_Click"/>
+                <AppBarButton x:Name="EditAppBarButton" Icon="Edit" Label="Edit" Click="EditAppBarButton_Click"/>
+                <AppBarButton x:Name="DeleteAppBarButton" Icon="Delete" Label="Delete" Click="DeleteAppBarButton_Click"/>
+                <AppBarButton x:Name="SearchAppBarButton" Icon="Find" Label="Search" Click="SearchAppBarButton_Click"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="110"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="20,0,0,21.5" Grid.RowSpan="2">
+            <TextBlock Text="SaveThePass" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="Accounts List" Margin="0,10,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontSize="40" FontFamily="Elephant" Foreground="{StaticResource PhoneAccentBrush}"/>
+        </StackPanel>
+
+        <StackPanel x:Name="searchStack" Grid.Row="1" Margin="10,12,10,6.5" Visibility="Collapsed">
+            <TextBlock Text="Search" FontSize="25" FontFamily="Elephant"/>
+            <TextBox x:Name="searchTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" KeyDown="searchTextBox_KeyDown"/>
+            <TextBlock x:Name="suggestionText" FontSize="20" FontFamily="Elephant" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <!--Search cancel button-->
+        <Button x:Name="searchCancelButton" Content="Cancel" Visibility="Collapsed" Grid.Row="2" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="searchCancelButton_Click" Background="{StaticResource PhoneAccentBrush}"/>
+
+        <StackPanel Grid.Row="1" Margin="10,12,10,6.5" DataContext="{StaticResource ResourceKey=accountManager}">
+            <ListBox x:Name="accountListBox" ItemsSource="{Binding LoadedAccounts}" VerticalAlignment="Bottom" Background="Transparent" DoubleTapped="accountListBox_DoubleTapped">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="1" Width="2000" BorderBrush="{StaticResource PhoneAccentBrush}">
+                            <StackPanel Margin="10,0,0,0">
+                                <TextBlock Text="{Binding AccountName}" FontFamily="Segoe Script" FontSize="30" Foreground="{ThemeResource ApplicationHeaderForegroundThemeBrush}" />
+                                <StackPanel Orientation="Horizontal">
+                                    <StackPanel>
+                                        <!--<TextBlock Text="{Binding Username}" FontSize="25" Foreground="Lime"/>-->
+                                        <TextBlock Text="{Binding Email}" FontStyle="Italic" FontSize="25" Foreground="{ThemeResource AppBarItemForegroundThemeBrush}"/>
+                                        <TextBlock Text="{Binding Password}" FontSize="25" Foreground="{ThemeResource ApplicationForegroundThemeBrush}"/>
+                                    </StackPanel>
+                                    <!--<Ellipse Height="Auto" Width="5" Margin="10,0" Fill="{StaticResource PhoneAccentBrush}"/>-->
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+
+    </Grid>
+</Page>

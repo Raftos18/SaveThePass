@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="WindowsPhone_SaveThePass.View.PreviewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsPhone_SaveThePass.Model_View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <local:AccManager x:Name="accountManager"/>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="3" Margin="19,0,0,0">
+            <TextBlock Text="SaveThePass" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="Preview" Margin="0,10,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontSize="40" FontFamily="Elephant" Foreground="{StaticResource PhoneAccentBrush}"/>
+        </StackPanel>
+
+        <ScrollViewer x:Name="MainScrollViewer" Grid.Row="1" Background="Transparent">
+            <StackPanel Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1">
+
+                <TextBlock Text="Account: " FontFamily="Elephant" FontSize="30" Foreground="{StaticResource PhoneAccentBrush}"/>
+                <TextBlock x:Name="AccountText" Text="An account" FontStyle="Italic" FontFamily="Elephant" FontSize="25" Margin="20,10,0,0"/>
+
+                <TextBlock Text="Username: " FontFamily="Elephant" FontSize="30" Margin="0,30,0,0" Foreground="{StaticResource PhoneAccentBrush}"/>
+                <TextBlock x:Name="UsernameText" Text="A username" FontStyle="Italic" FontFamily="Elephant" FontSize="25" Margin="20,10,0,0"/>
+
+
+                <TextBlock Text="E-mail: " FontFamily="Elephant" FontSize="30" Margin="0,30,0,0" Foreground="{StaticResource PhoneAccentBrush}"/>
+                <TextBlock x:Name="EmailText" Text="An email" FontStyle="Italic" FontFamily="Elephant" FontSize="25" Margin="20,10,0,0"/>
+
+                <TextBlock Text="Password: " FontFamily="Elephant" FontSize="30" Margin="0,30,0,0" Foreground="{StaticResource PhoneAccentBrush}"/>
+                <TextBlock x:Name="PasswordText" Text="A password" FontStyle="Italic" FontFamily="Elephant" FontSize="25" Margin="20,10,0,0"/>
+
+                <TextBlock x:Name="ExpiresInTextBlock" Margin="0,20,0,0" Text="Expires in:" FontSize="20" FontFamily="Elephant" Foreground="{StaticResource PhoneAccentBrush}"/>
+                <TextBlock x:Name="ExpirationTextBox" HorizontalAlignment="Left" Margin="110,-23,0,0" Text="Days" FontSize="20" FontFamily="Hebrew"/>
+
+                <TextBlock Text="Notes: " FontFamily="Elephant" FontSize="30" Margin="0,30,0,0" Foreground="{StaticResource PhoneAccentBrush}"/>
+                <TextBlock x:Name="NotesText" TextWrapping="Wrap" Text="Some notes" FontStyle="Italic" FontFamily="Elephant" FontSize="25" Margin="20,10,0,0"/>
+
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Page>
+

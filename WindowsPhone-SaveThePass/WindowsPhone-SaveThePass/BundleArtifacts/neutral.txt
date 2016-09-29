@@ -1,0 +1,4 @@
+MainPackage=C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\bin\Release\WindowsPhone-SaveThePass_1.2.2.8_AnyCPU.appx
+SymbolPackage=C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\AppPackages\WindowsPhone-SaveThePass_1.2.2.8_Test\WindowsPhone-SaveThePass_1.2.2.8_AnyCPU.appxsym
+ResourcePack=C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\bin\Release\WindowsPhone-SaveThePass_1.2.2.8_scale-100.appx
+ResourcePack=C:\Users\nraft\OneDrive\SaveThePass\WindowsPhone-SaveThePass\WindowsPhone-SaveThePass\bin\Release\WindowsPhone-SaveThePass_1.2.2.8_scale-140.appx
